@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Vodič za preživljavanje</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/dizajn.css"> 
+        <!--
+        <link rel="stylesheet" type="text/css" href="css/ipokec.css">-->        
+        <link rel="stylesheet" type="text/css" href="css/mobitel.css" media="screen and (max-device-width:450px)">
+        <link rel="stylesheet" type="text/css" href="css/tablet.css" media="screen and (min-device-width:450px) and (max-device-width:800px)">
+        <link rel="stylesheet" type="text/css" href="css/pc.css" media="screen and (min-device-width:800px) and (max-device-width:1000px)">
+        <link rel="stylesheet" type="text/css" href="css/tv.css" media="screen and (min-device-width:1000px)"> 
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+                
+        <script src="http://datatables.net/download/build/nightly/jquery.dataTables.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://datatables.net/download/build/nightly/jquery.dataTables.css" />
+        <!--
+        <link rel="stylesheet" type="text/css" href="http://api.jqueryui.com/jquery-wp-content/themes/jquery/css/base.css" />
+         -->
+        
+    </head>
+    <body>
+
+
+<header id="zaglavlje">
+               
+        
+        <nav id="meni">
+            <ul>
+                <li>
+                    <a href="index.php">Početna stranica</a>
+                </li>
+                <li>
+                    <a href="registracija.php">Registracija</a>
+                </li>
+                <li>
+                    <a href="prijava.php">Prijava</a>
+                </li>
+                <li>
+                    <a href="dokumentacija.html">Domumentacija</a>
+                </li>
+                
+            </ul>
+        </nav>
+        </header>
+
+        <section id="sadrzaj">
+            <h1>Dokumentacija</h1>  
+            <h3 style="text-align: center;">Opis projektnog zadatka</h3>
+            <h2 style="text-align: center;">Vodič za preživljavanje</h2>
+            <p>
+                Ovaj sustav pomaže korisnicima u učenju tehnika preživljavanja u različitim područjima. Korisnici mogu nači mnoge korisne materijale kao što su slike, video zapisi i ostali materijali koji opisuju kako preživjeti. 
+            </p>
+            <h4>Uloge:</h4>
+            <ul>
+                <li>
+                    Administrator
+                    <p>-Administrator upravlja cijelim sustavom. On kreira Područja te dodjeljuje moderatore za određena područja.
+                        može vidjeti aplikativnu statistiku i može blokirati ili odblokirati nekog korisnika.
+                    </p>
+                </li>
+                <li>
+                    Moderator
+                    <p>
+                        -Moderator piše i uređuje članke za područje koje mu je dodjeljeno. Vidi komentare na svoje članke i prema potrebi može blokirat nekog korisnika ako
+                        piše uvredljive komentare na članke. Prilikom pisanja novih članaka moderator može priložiti uz taj članaka slike, video materijale i  dodatne
+                        materijale.
+                    </p>
+                </li>
+                
+                <li>
+                    Registrirani korisnik
+                    <p>
+                        -Kako bi vidi članke od nekog područja prvo se mora pretplatiti na to područje. Ukoliko je pretplačen može pregledavati članke tog područja,
+                        materijale koji se nalaze u tom članku, te može ostaviti svoj komentar na članaka i ocijeniti članak.
+                        
+                    </p>
+                </li>
+                
+                <li>
+                    Neregistrirani korisnik
+                    <p>
+                        -Može vidjeti popis područja, te za svako područje popis članaka tog područja. Uz svaki članak mu se prikazuje koliko taj članak ima slike, video materijala i ostalih materijala.
+                    </p>
+                </li>
+                
+            </ul>
+            <h3 style="text-align: center;">Opis projektnog rješenja i bitne odrednice projektnog rješenja</h3>
+            <p>
+            Projektno rješenje koje je nastalo na temelju opisa projektnog zadatka, najbolje se može isčitati iz sljedećih dviju slika. Slika navigacijskog dijagrama prikazuje realiziranu funkcionalnost sustava,dok ERA model prikazuje strukturu tablica potrebnih za samu realizaciju sustava. 
+            </p>
+            <a href="img/era.png"><img src="img/era.png" height=400 width=400></a>
+            <a href="img/navigacijski.png"><img src="img/navigacijski.png" height=400 width=400></a>
+            <h3>Popis i opis skripata</h3>
+            <p>CSS:</p>
+            <ul>
+                <li>dizajn.css -cjelokupni izgled stranice</li>
+                <li>mobile.css -specifično formatiranje za mobitele</li>
+                <li>tablet.css -specifično formatiranje za tablet</li>
+                <li>pc.css -specifično formatiranje za stolno računalo</li>
+                <li>tv.css -specifično formatiranje za televizore visoke rezolucije</li>
+            </ul>
+            <p>JavaScript:</p>
+            <ul>
+                <li>registracijaJQ.js -validacija korisničkih podataka</li>
+                <li>tablica.js -dodaje DataTable funkcije na tablicu</li>
+                <li>validacija.js -validacija podataka prilikom registracije na korisničkoj strani</li>
+            </ul>
+            <p>PHP:</p>
+            <ul>
+                <li>aktivacija.php -aktiviranje korisnika putem emaila</li>
+                <li>baza.class.php -rad s mysql bazom</li>
+                <li>blokiraj.php -blokiranje korisnika od strane administratora</li>
+                <li>detaljipodrucja.php -služi za generiranje i ispis svih članaka nekog područja</li>
+                <li>dodajMat.php -dodavanje slika vezanih uz određeni članak</li>
+                <li>dodajOst.php -dodavanje ostalih materijala vezanih uz određeni članak</li>
+                <li>dodajVid.php -dodavanje video materijala vezanih uz određeni članak</li>
+                <li>footer.php -generira podnožje</li>
+                <li>header.php -generira zaglavlje</li>
+                <li>index.php -početna stranica</li>
+                <li>izmjeneOsobne.php -administrator mjenja podatke o korisniku</li>
+                <li>korisnici.php -ispis svih korisnika</li>
+                <li>kreiraj.php -za kreiranje novog područja</li>
+                <li>lozinka.php -šalje lozinku korisniku ukoliko ju je zaboravio</li>
+                <li>materijali.php -prikazuje sve materijale nekog članka</li>
+                <li>noviClanak.php -kreira novi članaka nekog područja</li>
+                <li>noviModerator.php -kreira novog moderatora iz odbranog korisnika</li>
+                <li>oClanku.php -prikazuje podatke o članku, komentare i ocjenu</li>
+                <li>odblokiraj.php -admin odlokirava korisnika</li>
+                <li>odjava.php -služi za odjavljivanje korisnika sa sustava</li>
+                <li>osobniPodaci.php -promjena korisnikovih osobnih podataka</li>
+                <li>poModeratoru.php -ispis broja članaka po moderatoru</li>
+                <li>poPodrucju.php -ispis broja članaka po području</li>
+                <li>podrucjeClanovi.php -prikaz korisnika koji su pretplačeni na područje</li>
+                <li>pomak.php -pomak vremena</li>
+                <li>popisClanaka.php -popsi svih članaka nekog moderatora</li>
+                <li>popisPodrucja.php -popis područja na koja se krisnik može pretplatiti</li>
+                <li>pretplata.php -pretplačivanje na određeno područje</li>
+                <li>pretplate.php -ispis područja na koja je korisnik pretplačen</li>
+                <li>prijava.php -prijava na sustav</li>
+                <li>promijeniKomentar.php -mijenja komentar</li>
+                <li>prosOcje.php -prikazuje prosječnu ocjenu svakog moderatora</li>
+                <li>registracija.php -registracija novog korisnika</li>
+                <li>uredi.php -služi za uređivanje nekog članka</li>
+                <li>videoPo.php -prikazuje koliko je koji moderator stavio video materijala</li>
+                <li>zabrani.php -korisnik više ne može vidjeti članak</li>
+                
+            </ul>
+            <h3>Mapa mjesta</h3>
+            <ul>
+                <li>
+                    Početna
+                    <ul>
+                        <li>Detalji područja</li>
+                    </ul>
+                </li>
+                <li>
+                    Registracija
+                </li>
+                <li>
+                    Prijava
+                    <ul>
+                        <li>
+                            Početna administrator
+                            <ul>
+                                <li>Popis blokiranih</li>
+                                <li>Aplikativna statistika</li>
+                                <li>Popis područja
+                                    <ul>
+                                        <li>Kreiranje područja</li>
+                                        <li>Povezivanje moderatora s područjem</li>
+                                        <li>Kreiranje novog moderatora</li>
+                                    </ul>
+                                </li>
+                                <li>Popis korisnika
+                                    <ul>
+                                        <li>Promjena korisničkih podataka</li>
+                                        <li>Blokiranje i odblokiravanje korisnika</li>
+                                    </ul>
+                                </li>
+                                <li>Osobni podaci</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Početna moderator
+                            <ul>
+                                <li>Novi članak</li>
+                                <li>Popis napisanih članaka
+                                    <ul>
+                                        <li>Detalji članka
+                                            <ul>
+                                                <li>Pregled materijala</li>
+                                                <li>Uređivanje članka</li>
+                                                <li>Blokiranje korisnika</li>
+                                                <li>Komantiranje</li>
+                                            </ul>
+                                        </li>
+                                        <li>Dodavanje slike</li>
+                                        <li>Dodavanje videa</li>
+                                        <li>Dodavanje ostalih materijala</li>
+                                    </ul>
+                                </li>
+                                <li>Osobni podaci</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Početna korisnik
+                            <ul>
+                                <li>Sva područja</li>
+                                <li>Osobni podaci</li>
+                                <li>Pregled članaka
+                                    
+                                        
+                                            <ul>
+                                                <li>Dodatni materijali</li>
+                                                <li>Komentiranje</li>
+                                                <li>Ocjenjivanje</li>
+                                            </ul>
+                                        
+                                    
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>
+            
+            <h3>Korištene tehnologije i alati</h3>
+            <p>Prilikom izrade su korištene sljedeće tehnologije:</p>
+            <ul>
+                <li>
+                    HTML 5 / CSS3
+                </li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+                <li>DataTables</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Smarty</li>
+            </ul>
+            
+            <h3>Vanjski (tuđi) moduli</h3>
+            <p>Tuđi vanjski modul koji je bio korišten za izradu projekta je Recaptcha koja se koristi za izbjegavanje automatizirane registacije.</p>
+            </section> 
+<footer>
+            <address>
+                KONTAKTIRAJTE NAS: <br/>
+                <a href="oAutoru.html">O autoru</a>
+            </address>
+            
+        </footer>
+        
+    </body>
+</html>

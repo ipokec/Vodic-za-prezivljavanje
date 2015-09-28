@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18.03.2015., 21:50:58
+    Author     : ipokec
+*/
+
+/*
+body{
+    
+    background-color: #CDCDCD;
+    width: 100%;
+}
+
+#zaglavlje > img {
+    display: none;
+}
+
+nav#meni{
+    display: inline-block;
+    width: 100%;   
+}
+
+#meni > ul{
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;    
+}
+
+#meni>ul li a {
+    
+    display: block;        
+    text-align: center;
+    border-style: dotted;    
+    border-color: #000000;
+    padding: 11px 10px;
+    
+}
+
+#meni>ul li:first-child a{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#meni>ul li:last-child a{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+*/
+
+#meni li {
+    margin: 5px;
+    background-color: #CF6A28;
+    
+}
+
+.gumb{       
+    padding: 5px 10px;        
+}
+
+section#sadrzaj{
+    width: 90%;
+    padding: 10px 10px;    
+    margin: 15px ;    
+}
+
+form{
+    
+    padding: 5px;
+    padding-bottom: 50px;    
+}
+label{
+    width: 70%;
+}
+input{
+    width: 90%;
+}
+#zapamti {    
+    margin: 7px 0px;
+    margin-right: 10px;    
+}
+
+.zapl {    
+    margin-right: 10px;
+    width: 20%;    
+}
+
+

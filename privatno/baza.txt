@@ -1,0 +1,19 @@
+
+WebDiP podaci za projekt
+
+
+  
+Poštovana kolegice/poštovani kolega,
+
+  Ovo je generirana poruka kojom vas se šalju WebDiP podaci za projekt
+
+Student/ica: Pokec Ivan Email: ipokec@foi.hr
+Arka direktorij: /var/www/WebDiP/2014_projekti/WebDiP2014x052 Korisnièko ime: ipokec
+MySQL baza podataka: WebDiP2014x052 Korisnièko ime: WebDiP2014x052 Lozinka: admin_iy62
+
+Preporuèujemo da što prije provjerite svoje korisnièke podatke kako se ne bi bilo
+problema kada doðe rok za obranu projekta.
+Ukoliko imate problem s korisnièkim podacima (pristup direktoriju ili bazi podataka)
+javite se za vrijeme konzultacija.
+
+Uspješan rad žele vam nastavnici predmeta Web dizajn i programiranje

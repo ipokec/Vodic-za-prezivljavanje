@@ -1,0 +1,1 @@
+<h2>Prosječna ocjena moderatora</h2>
